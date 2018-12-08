@@ -1,28 +1,62 @@
-from src.Alpha.TestNode import TestNode
-
-pass
+from src.Alpha.AlphaMemory import AlphaMemory
+from src.Alpha.TestNode import TestNode, FieldToTestEnum
 
 
 class AlphaNetwork():
     def __init__(self):
-        self.topNode = TestNode(True, "Top Node")
+        self.topNode = TestNode(FieldToTestEnum.NO_TEST, "Top Node")
+        self.dicc = {}
 
     def addCondition(self, condition):
         self.topNode.addCondition(condition)
 
     def addWME(self, wme):
+        v1, v2, v3 = wme.getListOfFields()
+        l = (str([v1, v2, v3]), str([v1, v2, None]), str([v1, None, v3]), str([v1, v2, v3]), str([None, v2, v3]),
+             str([v1, None, None]), str([None, v2, None]), str([None, None, v3]), str([None, None, None]))
+        for key in l:
+            if key in self.dicc:
+                alphaMem = self.dicc[key]
+                alphaMem.alphaMemoryActivation(wme)
         self.constantTestNodeActivation(self.topNode, wme)
 
-    def constantTestNodeActivation(self, node, wme):
-        if not node.isTopNode:
-            attr = wme.attribute
-            if attr == node.name:
-                for s in node.sons:
-                    self.constantTestNodeActivation(self,s,wme)
-            value= wme.value
-            if value ==node.name:
-                node.alphaMemory.addIfCompare(wme)
-            else:
+    def constantTestNodeActivation(self, node, wme):  # node constant test node
+        if not node.fieldToTestEnum == FieldToTestEnum.NO_TEST:
+            v = wme.get(node.fieldToTestEnum)
+            if v != node.value:
                 return
-        if node.alphaMemory:
-            self.alphaMemoryActivation(node.alphaMemory, wme)
+            if node.outPutMemory is not None:
+                node.outPutMemory.alphaMemoryActivation(wme)
+        for c in node.children:
+            self.constantTestNodeActivation(self, c, wme)
+
+    def removeWme(self, wme):
+        for item in wme.alphaMemItems:
+            item.amem.items.remove(item)
+        while wme.tokens != None:
+            self.deleteTokenAndDescendents(wme.tokens.pop(0))
+
+    def deleteTokenAndDescendents(self, token):
+        while token.children is not None:
+            self.deleteTokenAndDescendents(token.children.pop(0))
+        if token.wme is not None:
+            token.wme.tokens.remove(token)
+        token.parent.children.remove(token)
+        if token.node.items is not None:
+            for child in token.node.children:
+                child.amem.succesors.remove(child)
+
+    def buildOrShareAlphaMemory(self, condition):
+        idTest = None
+        attrTest = None
+        valueTest = None
+        if condition.testsConstantId(): idTest = condition.id
+        if condition.testsConstantAttribute(): idTest = condition.attribute
+        if condition.testsConstantValue(): idTest = condition.value
+        alphaMem = self.dicc[str(idTest, attrTest, valueTest)]
+        if alphaMem is not None:
+            alphaMem = AlphaMemory()
+            self.dicc[str(idTest, attrTest, valueTest)] = alphaMem
+        for wme in self.workingMemory:
+            if condition.test(wme):
+                alphaMem.alphaMemoryActivation(wme)

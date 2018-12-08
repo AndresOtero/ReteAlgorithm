@@ -1,9 +1,15 @@
-class AlphaMemory:
-    def __init__(self, condition):
-        self.condition = condition
-        self.wmes = []
-        self.succesors = []
+from src.Alpha.ItemInAlphaMemory import ItemInAlphaMemory
 
-    def addIfCompare(self, wme):
-        if self.condition.compare(wme.value):
-            self.wmes.append(wme)
+
+class AlphaMemory:
+    def __init__(self):
+        self.items = []
+        self.succesors = []
+        self.referenceCount = 0
+
+    def alphaMemoryActivation(self, wme):
+        item = ItemInAlphaMemory(wme,self)
+        self.wmes.insert(0, item)
+        self.wmes.alphaMemItems.insert(0, item)
+        for child in self.succesors:  # Join nodes
+            child.rightActivation(wme)
