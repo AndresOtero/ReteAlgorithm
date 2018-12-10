@@ -1,0 +1,15 @@
+(Sobrepeso
+peso >= 80
+Y altura <= 180
+O peso >= 90
+Y altura >= 190
+-->
+dieta = True
+)
+(Flaco
+peso <= 80
+O peso >= 80
+Y altura >= 180
+-->
+dieta = False
+)

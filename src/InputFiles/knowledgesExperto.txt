@@ -1,0 +1,6 @@
+Corrió en los últimos dos años = Si
+Distancia mas larga = Short
+Edad = 30
+Distancia Ultima carrera = Short
+Marca Última carrera = 60
+Carga Semanal Máxima = 6

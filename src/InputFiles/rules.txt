@@ -1,0 +1,176 @@
+(R1 _Inexperto
+Corrió en los últimos dos años = No
+-->
+Experiencia = 0
+)
+(R2_Experimentado_Short
+Corrió en los últimos dos años = Si
+Y Distancia mas larga = Short
+-->
+Experiencia = 1
+)
+(R3_ Experimentado en IronMan 70.3
+Corrió en los últimos dos años = Si
+Y Distancia mas larga = IronMan 70.3
+-->
+Experiencia = 2
+)
+(R4_ Experimentado en IronMan 140.6
+Corrió en los últimos dos años = Si
+Y Distancia mas larga = IronMan 140.6
+-->
+Experiencia = 3
+)
+(R5_Inexperto_Short
+Experiencia = 0
+-->
+distancia objetivo = 0
+)
+(R6_ Distancia objetivo máxima experimentado en Short
+Experiencia = 1
+-->
+distancia objetivo = 1
+distancia objetivo = 0
+)
+(R7_Distancia objetivo máxima experimentado en IronMan
+Experiencia = 2
+O Experiencia = 3
+-->
+distancia objetivo = 0
+distancia objetivo = 1
+distancia objetivo = 2
+)
+(R8_ Nivel Principiante
+Experiencia = 0
+-->
+Nivel = Principiante
+)
+(R9_ Nivel Amateur Joven
+Experiencia > 0
+Y Edad <= 40
+Y Distancia Ultima carrera = Short
+Y Marca Última carrera > 70
+O Distancia Ultima carrera = IronMan 70.3
+Y Marca Última carrera > 300
+O Distancia Ultima carrera = IronMan 140.6
+Y Marca Última carrera > 600
+-->
+Nivel = Amateur
+)
+(R9_ Nivel Avanzado Joven
+Experiencia > 0
+Y Edad <= 40
+Y Distancia Ultima carrera = Short
+Y Marca Última carrera <= 70
+O Distancia Ultima carrera = IronMan 70.3
+Y Marca Última carrera <= 300
+O Distancia Ultima carrera = IronMan 140.6
+Y Marca Última carrera <= 600
+-->
+Nivel = Avanzado
+)
+(R10_ Nivel Amateur Adulto
+Experiencia > 0
+Y Edad <= 65
+Y Edad >= 40
+Y Distancia Ultima carrera = Short
+Y Marca Última carrera > 90
+O Distancia Ultima carrera = IronMan 70.3
+Y Marca Última carrera > 330
+O Distancia Ultima carrera = IronMan 140.6
+Y Marca Última carrera > 660
+-->
+Nivel = Amateur
+)
+(R11_ Nivel Avanzado Adulto
+Experiencia > 0
+Y Edad <= 65
+Y Edad >= 40
+Y Distancia Ultima carrera = Short
+Y Marca Última carrera <= 90
+O Distancia Ultima carrera = IronMan 70.3
+Y Marca Última carrera <= 330
+O Distancia Ultima carrera = IronMan 140.6
+Y Marca Última carrera <= 660
+-->
+Nivel = Avanzado
+)
+(R12_ Nivel Amateur Veterano
+Experiencia > 0
+Y Edad > 64
+Y Distancia Ultima carrera = Short
+Y Marca Última carrera > 120
+O Distancia Ultima carrera = IronMan 70.3
+Y Marca Última carrera > 360
+O Distancia Ultima carrera = IronMan 140.6
+Y Marca Última carrera > 780
+-->
+Nivel = Amateur
+)
+(R13_ Nivel AvanzadoVeterano
+Experiencia > 0
+Y Edad > 64
+Y Distancia Ultima carrera = Short
+Y Marca Última carrera <= 120
+O Distancia Ultima carrera = IronMan 70.3
+Y Marca Última carrera <= 360
+O Distancia Ultima carrera = IronMan 140.6
+Y Marca Última carrera <= 780
+-->
+Nivel = Avanzado
+)
+(R14_ Plan Principiante Short
+Nivel = Principiante
+O Carga Semanal Máxima = 4
+-->
+Plan de entrenamiento = Principiante Short
+)
+(R15_ Plan Amateur Short
+distancia objetivo = 0
+Y Nivel = Amateur
+Y Carga Semanal Máxima >= 5
+O Nivel = Avanzado
+Y Carga Semanal Máxima = 5
+-->
+Plan de entrenamiento = Amateur Short
+)
+(R16_ Plan Avanzado Short
+Nivel = Avanzado
+Y distancia objetivo = 0
+Y Carga Semanal Máxima > 5
+-->
+Plan de entrenamiento = Avanzado Short
+)
+(R17_ Plan Amateur IronMan 70.3
+distancia objetivo = 1
+Y Nivel = Amateur
+Y Carga Semanal Máxima >= 5
+O Nivel= Avanzado
+Y Carga Semanal Maxima = 5
+-->
+ Plan de entrenamiento = Amateur Short
+)
+(R18_ Plan Avanzado IronMan 70.3
+Nivel = Avanzado
+Y distancia objetivo = 1
+Y Carga Semanal Máxima > 5
+-->
+ Plan de entrenamiento = Avanzado IronMan 70.3
+)
+(R19_ Plan Amateur IronMan 140.6
+Nivel = Amateur
+Y distancia objetivo = 2
+Y Carga Semanal Máxima >= 5
+O distancia objetivo = 2
+Y Nivel = Avanzado
+Y Carga Semanal Máxima== 5
+-->
+Plan de entrenamiento = Amateur IronMan 140.6
+)
+(R20_ Plan Avanzado IronMan 140.6
+Nivel = Avanzado
+Y distancia objetivo = 2
+Y Carga Semanal Máxima = 6 
+-->
+Plan de entrenamiento = Avanzado Short
+)

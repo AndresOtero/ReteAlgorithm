@@ -1,0 +1,2 @@
+peso = 77
+altura = 181
