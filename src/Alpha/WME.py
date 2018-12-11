@@ -5,3 +5,6 @@ class WME:
         self.attribute = attribute
         self.alphaMemsItems = []
         self.tokens = []
+
+    def __str__(self):
+        return  str(self.attribute)+str(self.symbol)+str(self.value)

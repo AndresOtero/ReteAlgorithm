@@ -6,20 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c8234a1c-feb2-41ca-b64e-e97350435c57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alpha/AlphaMemory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alpha/AlphaMemory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Alpha/AlphaNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alpha/AlphaNetwork.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alpha/ItemInAlphaMemory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alpha/ItemInAlphaMemory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alpha/TestNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alpha/TestNode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Alpha/WME.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alpha/WME.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Beta/BetaMemory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beta/BetaMemory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Beta/JoinNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beta/JoinNode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Beta/PNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beta/PNode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Beta/ReteNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beta/ReteNode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Beta/TestAtJoinNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beta/TestAtJoinNode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Beta/Token.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beta/Token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Condition/Condition.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Condition/Condition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Knowledge/Knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Knowledge/Knowledge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rules/Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules/Rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputFiles/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputFiles/Constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputFiles/rules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputFiles/rules.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,15 +22,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ReteAlgorithm$main.coverage" NAME="main Coverage Results" MODIFIED="1544552009251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ReteAlgorithm$main.coverage" NAME="main Coverage Results" MODIFIED="1544562285081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Rules/Rule.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InputFiles/knowledgesExperto.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="5" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Alpha/AlphaNetwork.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="180">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="26" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -46,10 +57,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Alpha/AlphaMemory.py">
+        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1247971763/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="204">
+              <caret line="3598" column="8" selection-start-line="3598" selection-start-column="8" selection-end-line="3598" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InputFiles/Constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -64,22 +84,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.py">
+        <entry file="file://$PROJECT_DIR$/src/Rules/RulesParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Beta/Token.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="311">
+              <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -87,47 +95,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Beta/PNode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="450">
+              <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rules/RulesParser.py">
+        <entry file="file://$PROJECT_DIR$/src/InputFiles/rules.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+            <state relative-caret-position="921">
+              <caret line="155" column="26" lean-forward="true" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Beta/JoinNode.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="330">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Alpha/TestNode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Alpha/WME.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -205,36 +195,36 @@
         <option value="$PROJECT_DIR$/src/Knowledge/KnowledgeParser.py" />
         <option value="$PROJECT_DIR$/src/InputFiles/knowledge.txt" />
         <option value="$PROJECT_DIR$/src/InputFiles/knowledgesInexperto.txt" />
-        <option value="$PROJECT_DIR$/src/InputFiles/rulesTest.txt" />
         <option value="$PROJECT_DIR$/src/Rules/RulesParser.py" />
         <option value="$PROJECT_DIR$/src/InputFiles/knowledgesExperto.txt" />
-        <option value="$PROJECT_DIR$/src/InputFiles/rules.txt" />
-        <option value="$PROJECT_DIR$/src/InputFiles/Constants.py" />
         <option value="$PROJECT_DIR$/src/FowardChain.py" />
         <option value="$PROJECT_DIR$/src/Rules/Rule.py" />
         <option value="$PROJECT_DIR$/src/Alpha/AlphaNetwork" />
         <option value="$PROJECT_DIR$/src/Knowledge/Knowledge.py" />
         <option value="$PROJECT_DIR$/src/Condition/Condition.py" />
         <option value="$PROJECT_DIR$/src/Beta/Token.py" />
-        <option value="$PROJECT_DIR$/src/Alpha/WME.py" />
         <option value="$PROJECT_DIR$/src/Alpha/ItemInAlphaMemory.py" />
         <option value="$PROJECT_DIR$/src/Beta/ReteNode.py" />
         <option value="$PROJECT_DIR$/src/Alpha/AlphaMemory.py" />
         <option value="$PROJECT_DIR$/src/Beta/TestAtJoinNode.py" />
         <option value="$PROJECT_DIR$/src/Alpha/TestNode.py" />
-        <option value="$PROJECT_DIR$/src/Beta/BetaMemory.py" />
-        <option value="$PROJECT_DIR$/src/Alpha/AlphaNetwork.py" />
+        <option value="$PROJECT_DIR$/src/InputFiles/rulesTest.txt" />
+        <option value="$PROJECT_DIR$/src/InputFiles/Constants.py" />
         <option value="$PROJECT_DIR$/src/Beta/JoinNode.py" />
+        <option value="$PROJECT_DIR$/src/Beta/BetaMemory.py" />
+        <option value="$PROJECT_DIR$/src/Alpha/WME.py" />
+        <option value="$PROJECT_DIR$/src/Alpha/AlphaNetwork.py" />
         <option value="$PROJECT_DIR$/src/Beta/PNode.py" />
+        <option value="$PROJECT_DIR$/src/InputFiles/rules.txt" />
         <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-22" />
-    <option name="y" value="206" />
-    <option name="width" value="1431" />
-    <option name="height" value="873" />
+    <option name="x" value="65" />
+    <option name="y" value="-2" />
+    <option name="width" value="1855" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -266,6 +256,12 @@
               <item name="ReteAlgorithm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Beta" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReteAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReteAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Condition" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReteAlgorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -363,22 +359,23 @@
       <workItem from="1544027429307" duration="8246000" />
       <workItem from="1544293053052" duration="20413000" />
       <workItem from="1544395900649" duration="16860000" />
-      <workItem from="1544545880368" duration="6499000" />
+      <workItem from="1544545880368" duration="15127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57158000" />
+    <option name="totallyTimeSpent" value="65786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-2" width="1855" height="1082" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19679381" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2570829" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,7 +384,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002764" side_tool="true" weight="0.32948583" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4997236" visible="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4997236" weight="0.42091152" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -426,39 +423,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/Alpha/AlphaNetwork.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/Alpha/AlphaMemory.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="54" />
+          <url>file://$PROJECT_DIR$/src/Beta/JoinNode.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/Alpha/AlphaNetwork.py</url>
           <line>31</line>
-          <option name="timeStamp" value="65" />
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/Alpha/AlphaNetwork.py</url>
+          <url>file://$PROJECT_DIR$/src/Beta/PNode.py</url>
           <line>35</line>
-          <option name="timeStamp" value="66" />
+          <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/Alpha/AlphaNetwork.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="68" />
+          <url>file://$PROJECT_DIR$/src/Beta/PNode.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/Alpha/AlphaMemory.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="70" />
+          <url>file://$PROJECT_DIR$/src/Beta/PNode.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Beta/PNode.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -471,52 +463,66 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="knowledgeSymbol == &quot; = &quot;" language="Python" />
-        <watch expression="rule.name" language="Python" />
-        <watch expression="len(self.rules)" language="Python" />
-        <watch expression="False if attributeKey not in premise else premise[attributeKey].compare(knowledge, attributeKey)" language="Python" />
+        <watch expression="self.rule.name" language="Python" />
+        <watch expression="self.rule.actionsDicc" language="Python" />
+        <watch expression="wme.attribute" language="Python" />
+        <watch expression="wme.value" language="Python" />
+        <watch expression="False if actionKey not in self.actionsDicc else self.actionsDicc[actionKey] == actionValue" language="Python" />
+        <watch expression="self.actionsDicc[actionKey] == actionValue" language="Python" />
+        <watch expression="self.actionsDicc[actionKey] " language="Python" />
+        <watch expression="False if actionKey not in self.actionsDicc else True" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>len(self.rules)</expression-string>
+        <expression-string>self.actionsDicc[actionKey]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>False if attributeKey not in premise else premise[attributeKey].compare(knowledge, attributeKey)</expression-string>
+        <expression-string>self.actionsDicc[actionKey] == actionValue</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rule.name</expression-string>
+        <expression-string>False if actionKey not in self.actionsDicc else self.actionsDicc[actionKey] == actionValue</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>knowledgeSymbol == &quot; = &quot;</expression-string>
+        <expression-string>False if actionKey not in self.actionsDicc else True</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>print(knowledgeSymbol)</expression-string>
+        <expression-string>return False if actionKey not in self.actionsDicc else True</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>knowledgeSymbol==str('=')</expression-string>
+        <expression-string>return False if actionKey not in self.actionsDicc else self.actionsDicc[actionKey] == actionValue</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>knowledgeSymbol == str(&quot;=&quot;)</expression-string>
+        <expression-string>wme.value</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>knowledgeSymbol == &quot;=&quot;</expression-string>
+        <expression-string>wme.attribute</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.rule.actionsDicc</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.rule.name</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -531,45 +537,11 @@
     <entry file="file://$PROJECT_DIR$/src/WorkingMemoryElement.py" />
     <entry file="file://$PROJECT_DIR$/src/InputFiles/knowledge.csv" />
     <entry file="file://$PROJECT_DIR$/src/InputFiles/knowledge.txt" />
-    <entry file="file://$PROJECT_DIR$/src/InputFiles/knowledgeTest.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputFiles/knowledgesInexperto.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputFiles/knowledgesExperto.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputFiles/rulesTest.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputFiles/rules.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="128" column="19" selection-start-line="128" selection-end-line="128" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Rules/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputFiles/Constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Knowledge/KnowledgeParser.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -578,13 +550,6 @@
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Knowledge/Knowledge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="16" selection-start-line="15" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -602,27 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules/Rule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Condition/Condition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alpha/ItemInAlphaMemory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Beta/TestAtJoinNode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -630,13 +574,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Beta/BetaMemory.py">
+    <entry file="file://$PROJECT_DIR$/src/InputFiles/knowledgeTest.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InputFiles/rulesTest.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InputFiles/knowledgesInexperto.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Condition/Condition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
@@ -649,36 +603,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/TestNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alpha/WME.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Beta/PNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules/RulesParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+        <state relative-caret-position="360">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Beta/Token.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beta/JoinNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Alpha/ItemInAlphaMemory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beta/BetaMemory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Alpha/AlphaMemory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Knowledge/Knowledge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Alpha/WME.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1247971763/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="3598" column="8" selection-start-line="3598" selection-start-column="8" selection-end-line="3598" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -689,39 +677,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Beta/JoinNode.py">
+    <entry file="file://$PROJECT_DIR$/src/Rules/RulesParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="311">
+          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alpha/AlphaMemory.py">
+    <entry file="file://$PROJECT_DIR$/src/InputFiles/knowledgesExperto.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state>
+          <caret selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
+    <entry file="file://$PROJECT_DIR$/src/InputFiles/Constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/AlphaNetwork.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="26" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules/Rule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beta/PNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InputFiles/rules.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="155" column="26" lean-forward="true" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>

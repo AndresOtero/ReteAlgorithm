@@ -10,13 +10,14 @@ class JoinNode(ReteNode):
         self.value = amem.condition.value
         self.tests = tests
         self.children = []
-        self.isTopNode= False
+        self.isTopNode = False
 
     def rightActivation(self, wme):
-        for t in self.parent.items:
-            if self.performJoinTests(t, wme):
-                for child in self.children:
-                    child.leftActivation(t, wme)
+        if self.isBetaMemory():
+            for t in self.parent.items:
+                if self.performJoinTests(t, wme):
+                    for child in self.children:
+                        child.leftActivation(t, wme)
 
     def leftActivation(self, token):
         for item in self.amem.items:
@@ -40,4 +41,3 @@ class JoinNode(ReteNode):
         parent.children.insert(0, joinNode)
         alphaMemory.succesors.insert(0, joinNode)
         return joinNode
-

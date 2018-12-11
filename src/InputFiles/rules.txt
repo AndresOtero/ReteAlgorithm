@@ -172,5 +172,5 @@ Nivel = Avanzado
 Y distancia objetivo = 2
 Y Carga Semanal Máxima = 6 
 -->
-Plan de entrenamiento = Avanzado Short
+Plan de entrenamiento = Avanzado IronMan 140.6
 )

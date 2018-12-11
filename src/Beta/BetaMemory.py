@@ -21,12 +21,11 @@ class BetaMemory(ReteNode):
         for child in parent.children:
             if child.isBetaMemory():
                 return child
-        betaMemory=BetaMemory(parent)
+        betaMemory = BetaMemory(parent)
         betaMemory.updateNewNodeWithMatchesFromAbove()
         return betaMemory
 
     def updateNewNodeWithMatchesFromAbove(self):
-        for token in self.parent.amem.items:
-            self.leftActivation(token)
-
-
+        for item in self.parent.amem.items:
+            for token in item.wme.tokens:
+                self.leftActivation(token, item.wme)

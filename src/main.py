@@ -20,14 +20,14 @@ knowledgeExperto = KnowledgeParser.getKnowledges("./InputFiles/knowledgesExperto
 # print(knowledgeInexperto)
 fwdChain = FowardChain(rules=rules, knowledge=knowledgeExperto)
 fwdChain.runReteAlgorithm()
-print(knowledgeExperto)
-fwdChain.printUsedRules()
-rule1 = rules[1]
-print(rule1)
-conditions = rule1.getConditions()
+#print(knowledgeExperto)
+# fwdChain.printUsedRules()
+
 alphaNetwork = AlphaNetwork()
-for rule in rules:
-    alphaNetwork.addProduction(rule)
 for key in knowledgeExperto.getKeys():
     wme=WME(key,knowledgeExperto.getSymbol(key),knowledgeExperto.getValue(key))
     alphaNetwork.addWME(wme)
+for rule in rules:
+    alphaNetwork.addProduction(rule)
+
+print(alphaNetwork.printWorkinMemory())

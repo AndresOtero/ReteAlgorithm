@@ -4,6 +4,7 @@ from src.Beta.BetaMemory import BetaMemory
 from src.Beta.JoinNode import JoinNode
 from src.Beta.PNode import PNode
 from src.Beta.TestAtJoinNode import TestAtJoinNode
+from src.InputFiles.Constants import Constants
 
 
 class AlphaNetwork():
@@ -72,3 +73,12 @@ class AlphaNetwork():
         currentNode.children.append(pNode)
         pNode.updateNewNodeWithMatchesFromAbove()
         self.pNodes.append(pNode)
+
+    def printWorkinMemory(self):
+        knowString="Las conclusiones son las siguientes:\n"
+        for wme in self.workingMemory:
+            if Constants.hasKey(wme.attribute):
+                knowString+=" - "+ str(wme.attribute) +" : "+str(Constants.getConstant(wme.attribute,wme.value))+"\n"
+            else:
+                knowString+=" - "+ str(wme.attribute) +" : "+str(wme.value)+"\n"
+        return knowString

@@ -7,6 +7,7 @@ class Constants:
         dicc["Experiencia"] = diccExperiencia
         diccDistanciaObjetivo = {"0": "Short", "1": "IronMan 70.3", "2": "IronMan 140.6"}
         dicc["distancia objetivo"] = diccDistanciaObjetivo
+
         return dicc[key][value]
 
     @staticmethod
