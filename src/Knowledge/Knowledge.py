@@ -6,6 +6,9 @@ class Knowledge:
     def __init__(self):
         self.attributeDicc = {}
 
+    def getKeys(self):
+        return self.attributeDicc.keys()
+
     def hasAttribute(self, attributeKey):
         return attributeKey in self.attributeDicc
 

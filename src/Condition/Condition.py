@@ -14,6 +14,7 @@ class Condition(ABC):
             return self.compareValue(knowledge.getValue(attributeKey))
         return False
 
+
     @abstractmethod
     def getSymbol(self):
         pass
@@ -22,6 +23,11 @@ class Condition(ABC):
     def compareValue(self, param):
         pass
 
+    def __eq__(self, other):
+        return self.getSymbol() == other.getSymbol() and self.name == other.name and self.value == other.value
+
+    def __str__(self):
+        return str(self.name)+self.getSymbol()+str(self.value)
 
 class Equal(Condition):
     """"""

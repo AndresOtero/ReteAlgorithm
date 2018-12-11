@@ -1,27 +1,35 @@
+from src.Alpha.AlphaMemory import AlphaMemory
+
 
 class TestNode:
     def __init__(self, isTopNode, name):
         self.isTopNode = isTopNode
-        self.sons = []
+        self.children = []
         self.alphaMemory = None
         self.name = name
 
     def addCondition(self, condition):
         if self.isTopNode:
-            for s in self.sons:
-                if condition.name == s.name:
+            for s in self.children:
+                if s.isJoinNode():
+                    pass
+                elif condition.name == s.name:
                     s.addCondition(condition)
-                    return
-                tNode = TestNode(False, condition.name)
-                self.sons.append(tNode)
-                tNode.addCondition(condition)
+                    return s
+            tNode = TestNode(False, condition.name)
+            self.children.append(tNode)
+            tNode.addCondition(condition)
         else:
-            for s in self.sons:
+            for s in self.children:
                 if s.name == condition.value:
-                    return
+                    return s
             tNode = TestNode(False, condition.value)
-            self.sons.append(tNode)
+            self.children.append(tNode)
             tNode.addAlphaMemory(condition)
+        return tNode
 
     def addAlphaMemory(self, condition):
-        self.alphaMemory = condition
+        self.alphaMemory = AlphaMemory(condition)
+
+    def isJoinNode(self):
+        return False

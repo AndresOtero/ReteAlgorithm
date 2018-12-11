@@ -37,6 +37,13 @@ class Rule:
     def getActionSymbol(self, key):
         return self.actionsDicc[key][0]
 
+    def getConditions(self):
+        conditions=[]
+        for premise in self.premises:
+            for key in premise:
+                conditions.append(premise[key])
+        return conditions
+
     def __eq__(self, other):
         return self.premises == other.premises and self.actionsDicc == other.actionsDicc
 

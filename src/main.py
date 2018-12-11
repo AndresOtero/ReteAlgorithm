@@ -1,15 +1,16 @@
-from src.Condition.Condition import GreaterOrEqual, LesserOrEqual
+import src.Alpha.AlphaNetwork
+
+from src.Alpha.AlphaNetwork import AlphaNetwork
+from src.Alpha.WME import WME
 from src.FowardChain import FowardChain
 from src.Knowledge.KnowledgeParser import KnowledgeParser
-from src.Knowledge.Knowledge import Knowledge
 from src.Rules.RulesParser import RulesParser
-from src.Rules.Rule import Rule
 
-rulesTest=RulesParser.getRules("./InputFiles/rulesTest.txt")
-rules=RulesParser.getRules("./InputFiles/rules.txt")
-knowledgeTest=KnowledgeParser.getKnowledges("./InputFiles/knowledgeTest.txt")
-knowledgeInexperto=KnowledgeParser.getKnowledges("./InputFiles/knowledgesInexperto.txt")
-knowledgeExperto=KnowledgeParser.getKnowledges("./InputFiles/knowledgesExperto.txt")
+rulesTest = RulesParser.getRules("./InputFiles/rulesTest.txt")
+rules = RulesParser.getRules("./InputFiles/rules.txt")
+knowledgeTest = KnowledgeParser.getKnowledges("./InputFiles/knowledgeTest.txt")
+knowledgeInexperto = KnowledgeParser.getKnowledges("./InputFiles/knowledgesInexperto.txt")
+knowledgeExperto = KnowledgeParser.getKnowledges("./InputFiles/knowledgesExperto.txt")
 
 # fwdChain = FowardChain(rules=rulesTest, knowledge=knowledgeTest)
 # fwdChain.runReteAlgorithm()
@@ -21,3 +22,12 @@ fwdChain = FowardChain(rules=rules, knowledge=knowledgeExperto)
 fwdChain.runReteAlgorithm()
 print(knowledgeExperto)
 fwdChain.printUsedRules()
+rule1 = rules[1]
+print(rule1)
+conditions = rule1.getConditions()
+alphaNetwork = AlphaNetwork()
+for rule in rules:
+    alphaNetwork.addProduction(rule)
+for key in knowledgeExperto.getKeys():
+    wme=WME(key,knowledgeExperto.getSymbol(key),knowledgeExperto.getValue(key))
+    alphaNetwork.addWME(wme)
