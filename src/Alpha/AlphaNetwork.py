@@ -1,7 +1,5 @@
 from src.Alpha.TestNode import TestNode
 
-pass
-
 
 class AlphaNetwork():
     def __init__(self):
@@ -18,9 +16,9 @@ class AlphaNetwork():
             attr = wme.attribute
             if attr == node.name:
                 for s in node.sons:
-                    self.constantTestNodeActivation(self,s,wme)
-            value= wme.value
-            if value ==node.name:
+                    self.constantTestNodeActivation(self, s, wme)
+            value = wme.value
+            if value == node.name:
                 node.alphaMemory.addIfCompare(wme)
             else:
                 return
